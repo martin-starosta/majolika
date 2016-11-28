@@ -1,0 +1,13 @@
+{
+    "name": "starosta/majolika",
+    "description": "Bootstrap 3 theme for Majolika site.",
+    "authors": [
+        {
+            "name": "Martin Starosta",
+            "email": "martin@mayorsoft.eu"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    }
+}

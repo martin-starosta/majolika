@@ -1,0 +1,118 @@
+body {
+    font-family: CorsicaSX, sans-serif;
+    font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.hero {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -31px;
+}
+
+.hero-small {
+    height: 25vh;
+    position: relative;
+    top: -31px;
+}
+.hero-small img {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar {
+    height: 65px;
+}
+.navbar-transparent {
+    background-color: rgba(0,0,0,.3);
+    border: none;
+}
+.navbar-transparent .menu-item a:hover{
+    background-color: rgba(0,0,0,.5);
+}
+.navbar-transparent .menu-item a{
+    color: white;
+    transition: .2s ease-in;
+}
+.navbar-transparent .menu-item.current-menu-item{
+    /*background-color: rgba(255,255,255,.15);*/
+}
+.navbar-fixed-top {
+    position: absolute;
+}
+.navbar-brand img {
+    position: relative;
+    top:-15px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color:white;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: rgba(255,255,255,.8);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background: none;
+}
+/*--------------------------------------------------------------
+# Facebook Feed Layout
+--------------------------------------------------------------*/
+.rfbp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.rfbp .rfbp-heading {
+    display: none;
+}
+.rfbp .rfbp-post {
+    border-bottom: 1px solid #888;
+    padding: 0 1em 1.5em 1em;
+    width: 33.3%;
+}
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@font-face {
+  font-family: CorsicaSX;
+  src: url(Delicious-Roman.eot);
+  src: local('CorsicaSX'), 
+        url('../fonts/CorsicaSX-Regular.otf') format('opentype');
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Alegreya', serif;
+}
+
+h1 {
+    color: rgb(37, 64, 143);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+.hero .subheader {
+    font-family: 'Alegreya', serif;
+    font-size: 42px;
+}
+
+.hero .header {
+    font-family: 'Alegreya', serif;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.white-text {
+    color: white;
+}
+
+.about-us {
+    background: url(../media/pottery.jpg);
+    background-size: cover;
+}
