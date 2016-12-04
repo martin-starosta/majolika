@@ -24,7 +24,7 @@ body {
 }
 
 .hero-small img {
-    height: 100%;
+    width: 100%;
     max-height: 100%;
     overflow: hidden;
 }
@@ -145,4 +145,28 @@ h1 {
 .about-us {
     background: url(../media/kruhari-majolika-modra.jpg);
     background-size: cover;
+}
+
+.post .post-content {
+    border-bottom: 1px solid #888;
+}
+
+.post .post-title {
+    font-family: 'Alegreya', serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.post .post-image {
+    height: 250px;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+.post .post-image img {
+    position: relative;
+    top: -75px;
+    width: 100%;
 }
