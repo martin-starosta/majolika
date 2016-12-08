@@ -8,10 +8,15 @@
 get_header();
 
 
- ?>
+$leadimage = get_post_custom_values( 'leadimage' )[0];
+if($leadimage === null) {
+	$leadimage = 'banner-o-nas.jpg';
+}
+
+?>
 
 <div class="hero-small">
-	<img src="<?= get_stylesheet_directory_uri(); ?>/media/pottery.jpg"/>
+	<img src="<?= get_stylesheet_directory_uri(); ?>/media/<?= $leadimage ?>"/>
 </div>
 
 <div class="container">

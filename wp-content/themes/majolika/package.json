@@ -1,0 +1,26 @@
+{
+  "name": "majolika",
+  "version": "1.0.0",
+  "description": "Wordpress theme for majolika.sk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-starosta/majolika.git"
+  },
+  "author": "Martin Starosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-starosta/majolika/issues"
+  },
+  "homepage": "https://github.com/martin-starosta/majolika#readme",
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}

@@ -12,9 +12,19 @@
  * @package majolika
  */
 
+
+$leadimage = get_post_custom_values( 'leadimage' )[0];
+if($leadimage === null) {
+	$leadimage = 'banner-o-nas.jpg';
+}
 get_header(); ?>
 
-	<div id="primary" class="content-area col-xs-12">
+<div class="hero-small">
+	<img src="<?= get_stylesheet_directory_uri(); ?>/media/<?= $leadimage ?>"/>
+</div>
+<div class="container">
+  <div class="row">
+	<div id="primary" class="content-area col-lg-12">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -57,5 +67,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+  </div>
+</div>
 <?php get_footer(); ?>

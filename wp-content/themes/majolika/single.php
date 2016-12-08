@@ -30,12 +30,12 @@ if($leadimage === null) {
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php
-				refur_posts_navigation(
+				/*refur_posts_navigation(
 					array(
 						'<span>' . __( 'Prev', 'refur' ) . '</span>%title',
 						'<span>' . __( 'Next', 'refur' ) . '</span>%title',
 					)
-				);
+				);*/
 			?>
 
 			<?php
@@ -49,7 +49,9 @@ if($leadimage === null) {
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<div class="col-md-4 col-sm-12 col-xs-12">
+		<?php get_sidebar(); ?>
+	</div>
   </div>
 </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
