@@ -125,6 +125,15 @@ h1 {
     margin: 1em 0;
 }
 
+.small-header {
+    color: rgb(37, 64, 143);
+    font-size: 24px;
+}
+
+.lead-text {
+    font-size: 24px;
+}
+
 .hero .subheader {
     font-family: 'Alegreya', serif;
     font-size: 42px;
