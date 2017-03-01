@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+
 <div class="jumbotron hero about-us leadspace-only">
   <div class="container">
       <?php while ( have_posts() ) : the_post(); ?>
@@ -14,4 +15,5 @@ get_header(); ?>
   </div>
 </div>
 
+<span class="show-popup" />
 <?php get_footer(); ?>
