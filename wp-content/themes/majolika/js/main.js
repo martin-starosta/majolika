@@ -27,7 +27,7 @@
             }
             var source = $('#modal-template').html();
             var template = Handlebars.compile(source);
-            var context = { modal_id: this.popupId, modal_title: 'Darujte 2% z dane', modal_body: "<img src='http://local.mayorsoft.eu/majolika/wp-content/uploads/2017/03/2-z-dane.jpg' />" };
+            var context = { modal_id: this.popupId, modal_title: 'Darujte 2% z dane', modal_body: "<img class='img-responsive' src='//majolikamodra.sk/wp-content/uploads/darujte_2018.png' />" };
             var html = template(context);
             $('body').append(html);
 
